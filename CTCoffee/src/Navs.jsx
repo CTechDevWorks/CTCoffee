@@ -7,7 +7,7 @@ const Navs = () => {
   return (
     <div className="navs">
       <div className="logo">
-        <img src={logo} width={350} height={95} />
+        <img src={logo}/>
       </div>
       <div className="nav-links">
         <h2>

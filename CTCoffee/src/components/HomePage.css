@@ -1,12 +1,21 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 .hero {
+  margin-top: 15dvh;
   background-color: var(--white);
   min-height: 85dvh;
   display: flex;
   justify-content: center;
+  position: relative;
+  width: 100%;
 }
 
 .header {
-  min-height: 60vh;
+  min-height: 60dvh;
   border-radius: 10px;
   background-color: var(--color-primary);
   text-align: center;
@@ -62,4 +71,55 @@
   100% {
     transform: rotate(0deg) scale(1);
   }
+}
+
+.shop {
+  background-color: var(--color-secondary);
+  min-height: 85dvh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  font-family: var(--font-primary);
+  color: var(--white);
+}
+
+.shop h2 {
+  margin: 3vh;
+  text-align: center;
+}
+
+.shop p {
+  margin: 3vh;
+  text-align: center;
+  font-size: 20px;
+}
+
+.shop span {
+  margin: 3vh;
+  font-size: 20px;
+  text-align: center;
+}
+
+.food {
+  display: flex;
+  justify-content: center;
+  margin: 3vh;
+}
+
+.food img {
+  padding: 20px;
+  margin: 20px;
+  transition: var(--transition);
+}
+
+.food img:hover{
+    transform: scale(1.05);
+}
+
+.shop button{
+    background-color: var(--color-secondary);
+    font-family: var(--font-primary);
+    font-size: 10px;
+    text-align: center;
 }

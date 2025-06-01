@@ -5,11 +5,14 @@
   background-color: var(--color-primary);
   color: var(--white);
   font-family: var(--font-primary);
-  position: relative;
+  position: fixed; /* Makes it stay at the top */
+  top: 0; /* Stick to top of page */
+  left: 0;
+  z-index: 1000;
 }
 
 .logo {
-  min-height: 12vh;
+  min-height: 12dvh;
   width: 30%;
   text-align: center;
   display: flex;
@@ -17,32 +20,34 @@
   overflow: hidden;
 }
 
-.logo img{
-    transition: var(--transition);
+.logo img {
+  transition: var(--transition);
+  min-height: 95px;
+  min-width: 340px;
 }
 
-.logo img:hover{
-    transform: scale(1.05);
+.logo img:hover {
+  transform: scale(1.05);
 }
 
 .nav-links {
-  min-height: 12vh;
+  min-height: 12dvh;
   width: 40%;
   display: flex;
   justify-content: center;
 }
 
-.nav-links h2{
-    font-size: 20px;
+.nav-links h2 {
+  font-size: 20px;
 }
 
 .nav-links h2 a {
-  position: relative;            /* Needed for absolute positioning of ::after */
+  position: relative; /* Needed for absolute positioning of ::after */
   text-decoration: none;
   color: inherit;
   font: inherit;
-  display: inline-block;         /* Required to size the underline properly */
-  padding-bottom: 5px;           /* Optional: adds some space below the text */
+  display: inline-block; /* Required to size the underline properly */
+  padding-bottom: 5px; /* Optional: adds some space below the text */
 }
 
 .nav-links h2 a::after {
@@ -53,11 +58,11 @@
   height: 2px;
   width: 100%;
   background-color: var(--white); /* Match your nav text color */
-  transform: scaleX(0);           /* Start hidden */
-  transform-origin: left;         /* Animate from left to right */
+  transform: scaleX(0); /* Start hidden */
+  transform-origin: left; /* Animate from left to right */
   transition: var(--transition);
 }
 
 .nav-links h2 a:hover::after {
-  transform: scaleX(1);           /* Animate to full width on hover */
+  transform: scaleX(1); /* Animate to full width on hover */
 }
