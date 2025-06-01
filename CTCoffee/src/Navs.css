@@ -1,20 +1,29 @@
 .navs {
   width: 100%;
-  min-height: 10vh;
+  min-height: 15vh;
   display: flex;
   background-color: var(--color-primary);
   color: var(--white);
   font-family: var(--font-primary);
+  position: absolute;
 }
 
 .logo {
-  min-height: 8vh;
-  width: 20%;
+  min-height: 12vh;
+  width: 30%;
   text-align: center;
 }
 
+.logo img{
+    transition: var(--transition);
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
 .nav-links {
-  min-height: 8vh;
+  min-height: 12vh;
   width: 40%;
   display: flex;
   justify-content: center;
