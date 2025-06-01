@@ -1,9 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Ancizar+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap");
+
 * {
   margin: auto;
   padding: auto;
   box-sizing: border-box;
 }
 
-:root{
-    
+:root {
+  --color-primary: #46340e;
+  --color-secondary: #3a5e3e;
+  --color-secondary: #004050;
+  --white: #f0f0f0;
+  --black: #0c0c0c;
+  --color-text: #323232;
+
+  --font-primary: "Ancizar Sans", sans-serif;
+  --font-secondary: "Lato", sans-serif;
+  --transition: all 0.6s cubic-bezier(0.23, 0.54, 0.6, 1.19);
 }

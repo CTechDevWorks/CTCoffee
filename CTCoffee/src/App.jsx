@@ -5,11 +5,13 @@ import Hero from './components/Hero'
 import Shop from './components/Shop'
 import Reviews from './components/Reviews'
 import Contact from './components/Contact'
+import Navs from './Navs'
 
 const App = () => {
   return (
     <div>
       <Router>
+        <Navs />
         <Routes>
           <Route path='/' element={<Hero />} />
           <Route path='/shop' element={<Shop />} />
