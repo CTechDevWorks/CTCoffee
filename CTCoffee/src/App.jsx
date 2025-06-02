@@ -1,10 +1,9 @@
-import React from 'react'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import './App.css'
-import HomePage from './components/HomePage'
-import Shop from './components/Shop'
-import Contact from './components/Contact'
-import Navs from './Navs'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import HomePage from "./components/HomePage";
+import Navs from "./Navs";
+// import Footers from "./Footers";
 
 const App = () => {
   return (
@@ -12,13 +11,12 @@ const App = () => {
       <Router>
         <Navs />
         <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/shop' element={<Shop />} />
-          <Route path='/contact' element={<Contact />}/>
+          <Route path="/" element={<HomePage />} />
         </Routes>
+        {/* <Footers /> */}
       </Router>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

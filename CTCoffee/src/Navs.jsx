@@ -17,9 +17,6 @@ const Navs = () => {
           <Link to={"/shop"}>Shop</Link>
         </h2>
         <h2>
-          <Link to={"/reviews"}>Reviews</Link>
-        </h2>
-        <h2>
           <Link to={"/contact"}>Contact</Link>
         </h2>
       </div>
